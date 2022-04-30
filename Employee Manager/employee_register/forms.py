@@ -6,4 +6,10 @@ class EmployeeForm(forms.ModelForm):
         model = Employee
         # fields = '__all__'
         fields = {'fullname', 'mobile', 'emp_code', 'position'}
+        labels = {
+            'fullname':'Full Name',
+            'mobile':'Mobile',
+            'emp_code':'EMP. Code',
+            'position':'Position'
+        }
 
